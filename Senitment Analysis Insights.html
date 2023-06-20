@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Siyabonga Mpengu Data Analysis Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Siyabonga Mpengu</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li class="active"><a href="Data Exploration Insights.html">Data Exploration insights</a>
+							<li class="active"><a href="Senitment Analysis Insights.html">Sentiment Analysis Insights</a></li>
+							<li class="active"><a href="Data Analysis Insights.html">Data Analysis Insights</a></li>
+							<li class="active"><a href="Financial Model.html">Financial Model Insights</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/Siyabonga-Mpengu" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Senitment Analysis<br />
+									Insights</h1>
+								</header>
+								<div class="image main"><img src="images/banks.webp" alt="" /></div>
+								<p>Twitter has over 300 million active monthly users and so it is perfect avenue for a company to gain valuable social media insights.  Analysing tweet sentiment can help an organization to monitor its brand, avoid crises, improve customer experience, products, and services, and ensure better target marketing.</p>
+								<p>The Absa twitter dataset was provided to us for this project. After loading the data, I extracted the cells that contained phrases related to Absa and any technological innovations in the banking space and I created a dataframe that consisted of only the ‘extract’ column, which was the column that contained the relevant tweets. I then cleaned this column by removing userhandles, hashtags, ‘RT’s, links, punctuations, contractions, special characters, numbers and stopwords. This clean data was then placed in a new column, ‘clean_tweets’ and I then dropped the ‘extract’ column was. I then created a dictionary that contained verbs, adverbs, nouns, and adjectives and defined a new function ‘token_stop_pos’ to tokenize the data, i.e., convert those tweets into small bits of data. This tokenized data was then put in the ‘POS tagged’ column and words were then tagged as either verbs, nouns, adverbs, or adjectives. I then defined the lemmatize function to get the root words of the words in the ‘POS tagged’ column.</p>
+								<p>I performed two WordCloud visualisations. The first one showed all the commonly used words in the ‘clean_tweets’ column. </p>
+								<a href="#" class="image fit"><img src="word_cloud1" alt="" /></a>
+								<p>After examining this visualisation, I cleaned the data some more by removing all the words in the WordCloud that were not related to Absa and its technological innovations, e.g., lockdown, Kaizer Chiefs, etc. I then ran a second visualization to ensure that the data cleaning worked. Once certain that data was sufficiently clean, I checked the subjectivity and polarity of the tweets and created corresponding columns in the dataframe to house the outputs. I added the ‘analysis’ column in the dataframe which showed whether a tweet was negative, positive, or neutral. I used the ‘analysis’ column to create a bar graph and after computing the percentages of the positive, negative, and neutral tweets I was then able to create a pie chart.</p>
+								<p>eets were positive with regards to Absa while 10% were negative and the remaining, 68.9%, were neutral. The high volume of neutral tweets points towards some of the limitations inherent in sentiment analysis using natural language processing. These may be cause by unrecognized abbreviations or the use of languages that the algorithm does not recognize or are not available. Be this as it may, actionable insights were gained in this endeavour. By diving deeper and creating WordClouds of the negative tweets, I was able to see what words or phrases were used in those tweets. For example, words such as long, charge, service, and time appeared quite prominently on the WordCloud. This may allude to customers having issues with consultants taking a long time to respond or resolve issue, issues with fees charged or the quality of customer services. </p>
+								<p>With this in hand, Absa is at a position to improve their customer experience and in so doing add more value to their clients.  </p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Siyabonga Mpengu</label>
+								</div>
+							</div>
+						</form>
+					</section>
+					<section class="split contact">
+						<section>
+							<h3>Phone</h3>
+							<p><a href="#">(072) 061-9272</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">siyampengu1@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://github.com/Siyabonga-Mpengu" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Siyabonga Mpengu</li>
+				</div>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Siyabonga Mpengu Data Analysis Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Siyabonga Mpengu</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li class="active"><a href="Data Exploration Insights.html">Data Exploration insights</a>
+							<li class="active"><a href="Senitment Analysis Insights.html">Sentiment Analysis Insights</a></li>
+							<li class="active"><a href="Data Analysis Insights.html">Data Analysis Insights</a></li>
+							<li class="active"><a href="Financial Model.html">Financial Model Insights</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/Siyabonga-Mpengu" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Financial Model<br />
+									Outcomes</h1>
+								</header>
+								<div class="image main"><img src="images/who-covid-19.jpg" alt="" /></div>
+								<p>MODEL APPLICATION RANGE</p>	
+								<p>	The largest data range that the model was validated was set at 20254, however the number of applicants may be as large as needed. When a dataset containing more than 10127 account numbers or new applications are received, queries would then need to be refreshed and formulae copied accordingly. <p> 
+									
+								<p>CLIENT OVERVIEW</p>
+								<p>The client who would be eligible for a payment holiday is one with a Nedbank loan for which they require said holiday. The client should not be overindebted, have a good credit record and the credit facilities that they have with Nedbank need to be up to date. Given that the cost of granting a payment holiday is high, as is the cost of default, any client with a history of default will not be eligible. 
+								<p>
+									
+								<p>EXPLORATORY DATA ANALYSIS<p>
+								<p>Upon receipt of the data, it was cleaned whereby account numbers associated with clients younger than 18 were removed. As were those with empty fields, particularly the salary, instalment, credit score, start and end dates, and the number of defaults (if any). There were several fields associated with each account number, however the most pertinent variables for creating the model were gross monthly salary, monthly instalments, credit score, and default status.  
+									
+									
+								<p>MODEL FACTORS, WEIGHTS AND THRESHOLDS</p>
+								<p>The factors that the model considers in rendering an outcome are the debt-salary ratio, credit score and defaults. All the factors are weighted equally. A debt-salary ratio of more than 0.36 is considered as over indebtedness and these clients would not qualify. A credit score of less 640 disqualifies a client, as does a history of default. 
+									</p>
+								<p>COST TO BUSINESS<p>
+								<p>Cost to business using the old process (approving 50% of applications): R5 949 612,50
+								<p>3 months payment holiday cost to business: R311 375
+								<p>	6 months payment holiday cost to business: R115 150
+								<p>
+									
+								<p>	CONCLUSIONS/RECOMMENDATIONS<p>
+								<p>	With 10 127 applicants, the model accepted 363; that is a 3,58% approval rate. While the model does drastically reduce the cost to the company by 92,8%, given that Nedbank is a people-driven company and seeks to help those clients whose accounts are in good standing, I would recommend relaxing some of the model factor thresholds. Of the three, the factor that I would recommending loosening is the credit score. Loosening the debt-salary ratio, i.e., making it higher, we run the risk of over indebting clients and increasing their likelihood defaulting. Since clients whose accounts are in good standing are the only ones eligible for the payment holiday, adjusting the default parameter requirement is not possible.
+									</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Siyabonga Mpengu</label>
+								</div>
+							</div>
+						</form>
+					</section>
+					<section class="split contact">
+						<section>
+							<h3>Phone</h3>
+							<p><a href="#">(072) 061-9272</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">siyampengu1@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://github.com/Siyabonga-Mpengu" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Siyabonga Mpengu</li>
+				</div>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
